@@ -23,7 +23,7 @@ st.set_page_config(
 # ── Cached loaders ────────────────────────────────────────────────────────────
 @st.cache_data
 def load_data():
-    file_path = "/Users/supriyah/executive-briefing-bot/Sample - Superstore.csv"
+    file_path = "Sample - Superstore.csv"
     df = pd.read_csv(file_path, encoding='latin1')
     df['Order Date'] = pd.to_datetime(df['Order Date'])
     df['Ship Date'] = pd.to_datetime(df['Ship Date'])
